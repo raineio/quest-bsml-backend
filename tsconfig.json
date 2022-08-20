@@ -21,7 +21,7 @@
         "isolatedModules": true,
         "jsx": "preserve",
         "downlevelIteration": true,
-        "outDir": "dist"
+        "outDir": "dist",
     },
     "include": [
         "src"
