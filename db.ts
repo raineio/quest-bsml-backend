@@ -2,11 +2,11 @@ import * as db from "mongoose";
 import { DBSchema, IDataBase } from "./interfaces/IDataBase";
 import { Model } from "./interfaces/IModel";
 
-function Find(doc: {}) {
+function Find(doc) {
     Model.findOne({ doc }).exec();
 }
 
-function FindMany(doc: {}[]) {
+function FindMany(doc) {
     let i: number;
     for (i = 0; i > doc.length; i++) {
         const documents = doc[i];
@@ -14,11 +14,11 @@ function FindMany(doc: {}[]) {
     }
 }
 
-function Add(doc: {}) {
+function Add(doc) {
     Model.create(doc);
 }
 
-function AddMany(doc: {}[]) {
+function AddMany(doc) {
     let i: number;
     for (i = 0; i > doc.length; i++) {
         const documents = doc[i];
